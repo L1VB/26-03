@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100vw;
+}
+
+.target-section, .second-target-section, header, .layout{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+/* scroll */
+.target-section {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.second-target-section {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.scroll-button, .up-button {
+    position: fixed;
+    padding: 10px 20px;
+    background-color: #0000ff89;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    font-family: 'Poppins';
+}
+.scroll-button {
+    top: 20px;
+    left: 50%;
+    transform: translateX(calc(-100% - 5px));
+}
+.scroll-button.second {
+    top: 20px;
+    left: 50%;
+    transform: translateX(calc(5px));
+}
+.up-button {
+    display: none;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    z-index: 2;
+}
+
+/* header */
+header {
+    font-family: 'Poppins';
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+header img {
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100vh;
+}
+
+.title {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.content {
+    margin: 10% 5%;
+}
+
+header .content .text {
+    z-index: 2;
+    color: #fff;
+    position: relative;
+
+}
+
+/* target */
+.layout {
+    font-family: 'Poppins';
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.layout img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.title {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.content {
+    margin: 10% 5%;
+}
+
+.layout .content .text {
+    z-index: 2;
+    color: #fff;
+    position: relative;
+
+}
+
+/* id */
+#colour-change{
+    color: #ff4d00;
+}
+#img-bg-1{
+    width: 100vw;
+    height: auto;
+}
+#img-bg-2{
+    width: auto;
+    height: 100vh;
+}
+
+/* design one */
+.content#d-c-1{
+    margin: 0;
+}
+.title#d-t-1{
+    text-align: center;
+}
+.text#d-tt-1{
+    margin: 0 5%;
+}
+.logo img{
+    height: 50px;
+    width: auto;
+    z-index: 3;
+    position: relative;
+    margin: 0;
+}
+.content#d-c-1 iframe{
+    z-index: 5;
+}
+
+/* logo and nav align */
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2.5%;
+}
+
+/* nav style */
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+nav a{
+    z-index: 1;
+    padding: relative;
+    color: #fff;
+    padding-right: 20px;
+    top: 0;
+}
